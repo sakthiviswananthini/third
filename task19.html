@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 19</title>
+    <style>
+        #formm{
+            position: absolute;
+            left: 400px;
+            height: 500px;
+            width: 450px;
+            background-color: peachpuff;
+            border: 3px solid black;
+            margin: 50px;
+        }
+        #lname{
+            font-size: xx-large;
+            margin: 50px;
+        }
+        #lema{
+            font-size: xx-large;
+            margin: 50px;
+        }
+        #lpass{
+            font-size: 28px;
+            margin: 50px;
+        }
+        #lre{
+            font-size: 30px;
+            margin: 50px;
+        }
+        #lcon{
+            font-size: xx-large;
+            margin: 50px;
+        }
+        #name{
+            font-size: large;
+        }
+        #ema{
+            font-size: large;
+        }
+        #pass{
+            font-size: large;
+        }
+        #re{
+            font-size: large;
+        }
+        #con{
+            font-size: large;
+        }
+        #pname{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #pema{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #ppass{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #pre{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #pcon{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="formm">
+        <label for="" id="lname">Name:</label>
+        <input type="text" name="" id="name"><br>
+        <p id="pname"></p><br><br><br>
+        <label for="" id="lema">Email:</label>
+        <input type="email" name="" id="ema"><br>
+        <p id="pema"></p><br><br><br>
+        <label for="" id="lpass">Password:</label>
+        <input type="password" id="pass"><br>
+        <p id="ppass"></p><br><br><br>
+        <label for="" id="lre">Re Enter:</label>
+        <input type="password" name="" id="re"><br>
+        <p id="pre"></p><br><br><br>
+        <label for="" id="lcon">Contact:</label>
+        <input type="text" name="" id="con" maxlength="12"><br>
+        <p id="pcon"></p><br><br><br>
+        <button style="font-size: larger;position: absolute;left: 200px;" onclick="return sub()">SUBMIT</button>
+    </form>
+    <script>
+        function sub(){
+            var n=document.getElementById("name").value;
+            var pn=document.getElementById("pname");
+            f=true;
+            if(n=="")
+        {
+            pn.innerHTML="Name must be fill out";
+            f=false
+        }
+        else{
+            pn.innerHTML=" ";
+        }
+            var e=document.getElementById("ema").value;
+            var pe=document.getElementById("pema");
+            if(e=="")
+        {
+            pe.innerHTML="mail must be fill out";
+            f=false
+        }
+        else{
+            pe.innerHTML=" ";
+        }
+            var p=document.getElementById("pass").value;
+            var pp=document.getElementById("ppass");
+            if(p=="")
+        {
+            pp.innerHTML="password must be fill out";
+            f=false
+        }
+        else{
+            pp.innerHTML=" ";
+        }
+            var r=document.getElementById("re").value;
+            var pr=document.getElementById("pre");
+            if(r=="")
+        {
+            pr.innerHTML="confirm password must be fill out";
+            f=false
+        }
+        else{
+            pr.innerHTML=" ";
+        }
+            var c=document.getElementById("con").value;
+            var pc=document.getElementById("pcon");
+        if(c=="")
+        {
+            pc.innerHTML="mobile number must be fill out";
+            f=false
+        }
+        else{
+            pc.innerHTML=" ";
+        }
+        return f
+        }
+
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 19</title>
+    <style>
+        #formm{
+            position: absolute;
+            left: 400px;
+            height: 500px;
+            width: 450px;
+            background-color: peachpuff;
+            border: 3px solid black;
+            margin: 50px;
+        }
+        #lname{
+            font-size: xx-large;
+            margin: 50px;
+        }
+        #lema{
+            font-size: xx-large;
+            margin: 50px;
+        }
+        #lpass{
+            font-size: 28px;
+            margin: 50px;
+        }
+        #lre{
+            font-size: 30px;
+            margin: 50px;
+        }
+        #lcon{
+            font-size: xx-large;
+            margin: 50px;
+        }
+        #name{
+            font-size: large;
+        }
+        #ema{
+            font-size: large;
+        }
+        #pass{
+            font-size: large;
+        }
+        #re{
+            font-size: large;
+        }
+        #con{
+            font-size: large;
+        }
+        #pname{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #pema{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #ppass{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #pre{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+        #pcon{
+            position: absolute;
+            left: 50px;
+            font-size: 25px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="formm">
+        <label for="" id="lname">Name:</label>
+        <input type="text" name="" id="name"><br>
+        <p id="pname"></p><br><br><br>
+        <label for="" id="lema">Email:</label>
+        <input type="email" name="" id="ema"><br>
+        <p id="pema"></p><br><br><br>
+        <label for="" id="lpass">Password:</label>
+        <input type="password" id="pass"><br>
+        <p id="ppass"></p><br><br><br>
+        <label for="" id="lre">Re Enter:</label>
+        <input type="password" name="" id="re"><br>
+        <p id="pre"></p><br><br><br>
+        <label for="" id="lcon">Contact:</label>
+        <input type="text" name="" id="con" maxlength="12"><br>
+        <p id="pcon"></p><br><br><br>
+        <button style="font-size: larger;position: absolute;left: 200px;" onclick="return sub()">SUBMIT</button>
+    </form>
+    <script>
+        function sub(){
+            var n=document.getElementById("name").value;
+            var pn=document.getElementById("pname");
+            f=true;
+            if(n=="")
+        {
+            pn.innerHTML="Name must be fill out";
+            f=false
+        }
+        else{
+            pn.innerHTML=" ";
+        }
+            var e=document.getElementById("ema").value;
+            var pe=document.getElementById("pema");
+            if(e=="")
+        {
+            pe.innerHTML="mail must be fill out";
+            f=false
+        }
+        else{
+            pe.innerHTML=" ";
+        }
+            var p=document.getElementById("pass").value;
+            var pp=document.getElementById("ppass");
+            if(p=="")
+        {
+            pp.innerHTML="password must be fill out";
+            f=false
+        }
+        else{
+            pp.innerHTML=" ";
+        }
+            var r=document.getElementById("re").value;
+            var pr=document.getElementById("pre");
+            if(r=="")
+        {
+            pr.innerHTML="confirm password must be fill out";
+            f=false
+        }
+        else{
+            pr.innerHTML=" ";
+        }
+            var c=document.getElementById("con").value;
+            var pc=document.getElementById("pcon");
+        if(c=="")
+        {
+            pc.innerHTML="mobile number must be fill out";
+            f=false
+        }
+        else{
+            pc.innerHTML=" ";
+        }
+        return f
+        }
+
+    </script>
+</body>
+</html>
